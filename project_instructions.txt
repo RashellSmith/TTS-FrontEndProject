@@ -1,0 +1,13 @@
+HTML/CSS/JS/Bootstrap Project
+
+Choose one of the three example sites included in the folder "Example Sites".
+Using what you've learned with HTML/CSS/JS and Bootstrap, mimic the example site you choose as closely as possible in the time alloted.
+When building your version of the site, don't worry about making it exactly the same to the pixel. Instead, focus on creating the same structure, sections, text/images, etc.
+Don't forget to utilize quick tools available to you, like Bootstrap's components. 
+
+You can use the template files included or, if you want to, you can start from scratch. 
+
+URLs of example sites:
+thehartford.com/about-us
+shopify.com
+wordpress.com 
