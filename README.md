@@ -1,4 +1,4 @@
-#TTS Front-End Project\
+# TTS Front-End Project\
 [Live](https://rashellsmith.github.io/TTS-FrontEndProject/)
 
 The purpose of this assignment was to recreate a website of my choosing  using the technologies we learned in class. I chose The Hartford's website's about us page and tried to recreate it using html and css.  
