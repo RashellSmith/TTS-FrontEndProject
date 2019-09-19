@@ -1,49 +1,72 @@
-﻿
+﻿<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta charset="utf-8"/>
-        <title>The Wyoming</title>
-        <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-        <link href="styles.css" rel="stylesheet"/>
-    </head>
-    <body id="main">
 
-        
-            <div class= "nav-container">
-                    <img id="navbar-logo-2" src="images/the-hartford-logo.png"/>
-                  <nav id="nav2" >
-                        <div class="topnav">
-                                       <span class="nav-lk"><a class="active" href="#home">MY ACCOUNT</a></span> 
-                                       <span class="nav-lk"><a href="#Agents & Producers">Agents & Producers</a></span>
-                                        <span class="nav-lk"><a href="#Contact US">Contact US</a></span>
-                                        <span class="nav-lk"><a href="#Claims">Claims</a></span>
-                                        <span class="nav-lk"><a href="#Find an Agent">Find an Agent</a></span>
-                        </div>
-                        <div class="Bottomnav">
-                                       <span class="nav-lk"><input style="margin-left: 100px;"placeholder="search"/></span>
-                                       <span class="nav-lk"><a class="Auto" href="#home">Auto</a></span> 
-                                       <span class="nav-lk"><a href="#Home">Home</a></span>
-                                       <span class="nav-lk"><a href="#business">business</a></span> 
-                                       <span class="nav-lk"><a href="#Employee Benefits">Employee Benefits</a></span> 
-                                       <span class="nav-lk"><a href="#About Us">About Us</a></span>
-                                       
-                        </div>
+<head>
+    <meta charset="utf-8" />
+    <title>The Wyoming</title>
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" />
+</head>
 
-                    </nav>
+<body id="main">
 
+
+    <div class="nav-container">
+        <img alt="the-hartford-logo"id="navbar-logo-2" src="images/the-hartford-logo.png" />
+        <nav id="nav2">
+            <div class="topnav">
+                <span class="nav-lk"><a class="active" href="#home">MY ACCOUNT</a></span>
+                <span class="nav-lk"><a href="#">Agents & Producers</a></span>
+                <span class="nav-lk"><a href="#">Contact US</a></span>
+                <span class="nav-lk"><a href="#">Claims</a></span>
+                <span class="nav-lk"><a href="#">Find an Agent</a></span>
+            </div>
+            <div class="bottomnav">
+                <span class="nav-lk"><input style="margin-left: 100px;" placeholder="search" /></span>
+                <span class="nav-lk"><a class="Auto" href="#home">Auto</a></span>
+                <span class="nav-lk"><a href="#Home">Home</a></span>
+                <span class="nav-lk"><a href="#">business</a></span>
+                <span class="nav-lk"><a href="#">Employee Benefits</a></span>
+                <span class="nav-lk"><a href="#">About Us</a></span>
+
+            </div>
+
+        </nav>
+
+    </div>
+    <nav id="nav" class="navbar container-fluid justify-content-between ">
+        <a><img id="navbar-logo" src="images/the-hartford-logo.png" /></a>
+        <div class="navbar-nav">
+            <button class="nav-bt" onclick="openNav1()">
+                <img class="account-icon" src="images/account-icon.png" />
+                <span>ACCOUNT</span>
+            </button>
+            <button class="nav-bt" href="javascript:void(0);" onclick="openNav2()" type="button">
+                <div class="hb icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
-        <nav id="nav"class="navbar container-fluid justify-content-between ">
-            <a><img id="navbar-logo" src="images/the-hartford-logo.png"/></a>
-            <div class="navbar-nav">
-                <button class="nav-bt" onclick="openNav1()">
-                    <img class="account-icon" src="images/account-icon.png"/>
-                    <span>ACCOUNT</span>
-                </button>
-                <button class="nav-bt" href="javascript:void(0);" onclick="openNav2()" type="button">
+                <span>MENU</span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="header container-fluid">
+        <a href="">Home /</a>
+        <h1>About Us</h1>
+    </div>
+
+
+    <div class="sidenav" id="mySidenav1">
+        <div id="navside">
+            <div class="nav-sd">
+                <button class="nav-bt-sd" type="button">
                     <div class="hb icon">
                         <div></div>
                         <div></div>
@@ -51,150 +74,128 @@
                     </div>
                     <span>MENU</span>
                 </button>
+                <button class="nav-bt-sd" href="javascript:void(0)" onclick="closeNav1()">
+                    <i class=" icon material-icons w3-xxlarge">close</i>
+                    <span>CLOSE</span>
+                </button>
             </div>
-        </nav>
 
-        <div class="header container-fluid">
-            <a href="">Home /</a>
-            <h1>About Us</h1>
-        </div>
-
-
-        <div class="sidenav" id="mySidenav1">
-            <div id="navside">
-                <div class="nav-sd">
-                    <button class="nav-bt-sd" type="button">
-                        <div class="hb icon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <span>MENU</span>
-                    </button>
-                    <button class="nav-bt-sd" href="javascript:void(0)" onclick="closeNav1()">
-                        <i class=" icon material-icons w3-xxlarge">close</i>
-                        <span>CLOSE</span>
-                    </button>
-                </div>
-
-
-            </div>
 
         </div>
 
-        <div class="sidenav" id="mySidenav2">
-            <div id="navside">
-                <div class="nav-sd">
-                    <button class="nav-bt-sd">
-                        <img class="account-icon" src="images/account-icon.png"/>
-                        <span>ACCOUNT</span>
-                    </button>
-                    <button class="nav-bt-sd" href="javascript:void(0)" onclick="closeNav2()">
-                        <i class=" icon material-icons w3-xxlarge">close</i>
-                        <span>CLOSE</span>
-                    </button>
-                </div>
+    </div>
 
-
+    <div class="sidenav" id="mySidenav2">
+        <div id="navside">
+            <div class="nav-sd">
+                <button class="nav-bt-sd">
+                    <img class="account-icon" src="images/account-icon.png" />
+                    <span>ACCOUNT</span>
+                </button>
+                <button class="nav-bt-sd" href="javascript:void(0)" onclick="closeNav2()">
+                    <i class=" icon material-icons w3-xxlarge">close</i>
+                    <span>CLOSE</span>
+                </button>
             </div>
+
+
         </div>
+    </div>
 
 
-        <div class="container-fluid">
-            <div>
-                <img class="img-fluid" src="images/about.jpg"/>
-                <div class="card-main">
-                    <div class="card-content-main">
-                        <h2>Making Human Achievement Possible</h2>
-                        <p>Yes, we’re an insurance company – but we’re also human beings. And we believe that people are capable 
-                        of achieving amazing things with the right encouragement and support.</p>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <div class="card-tagline">
-                <div class="card-content">
-                <h3>Human Achievement Is at the Heart of What We Do</h3>
-                <p>We put our belief into action by not only ensuring individuals and businesses are well protected, 
-                but by going even further – making an impact in ways that go beyond an insurance policy.</p>
-            </div>
-        </div>
-
-            <div class="card-container">
-                <span class=" img-box"><img class="img img-fluid" src="images/kid-in-hat.jpg"/></span>
-                <div class="card-content">
-                    <div class=>
-                    <h3>Our Human Achievement Programs</h3>
-                    <p>These programs drive education, support and volunteerism that put human beings first because when our customers,
-                     communities and employees succeed, we all do.</p>
-                    <a href="">Learn About Our Human Achievement Programs</a>
-                </div>
-            </div>
-        </div>
-
-            <div class="card-container">
-                    <div class="card">
-                            <div class="card-content">
-                            <h3>Sustainability</h3>
-                            <p>Making an impact for good is a guiding principle for our 
-                                company and is key to how we operate every day.</p>
-                                <a href="">See How We’re Making an Impact for Good</a>
-                        </div>
-                
-                    <span class=" img-box"><img class="img img-fluid" src="images/kid-in-hat.jpg"/></span>
-                
-            </div>
-        </div>
-
-            <div class="card-container">
-                <span class="img-box"><img class="img img-fluid" src="images/kid-in-hat.jpg"/></span>
-                
-                <div class= "card">
-                    <div class= "card-content">
-                    <h3>Leadership</h3>
-                    <p>Growing the business. Cultivating a culture of doing the right thing.
-                         Our leadership team has a clear vision for our future.</p>
-                         <a href="">Meat Out Leaders</a>
-                </div>
-            </div>
-        </div>
-
-            <div class="card-container">
-                    <div class= "card">
-                            <div class="card-content">
-                            <h3>Careers</h3>
-                            <p>Our team puts their talents to meaningful work 
-                                – helping people achieve amazing things. And we want you to join us.</p>
-                            <a href="">Join Out Team</a>
-                        </div>
-                <span class="img-box"><img class="img img-fluid" src="images/kid-in-hat.jpg"/></span>
-                
-            </div>
-        </div>
 
         <div>
-            <h1>“Building on our proud history of doing the right thing, you can count on The Hartford to engage on issues when we can make a difference and influence change, and to demonstrate our positive impact on society.”</h1>
+            <img class="img-fluid" src="images/about.jpg" />
+            <div class="card-main">
+                <div class="card-content-main">
+                    <h2>Making Human Achievement Possible</h2>
+                    <p>Yes, we’re an insurance company – but we’re also human beings. And we believe that people are
+                        capable
+                        of achieving amazing things with the right encouragement and support.</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="card-tagline">
+            <div class="card-content">
+                <h3>Human Achievement Is at the Heart of What We Do</h3>
+                <p>We put our belief into action by not only ensuring individuals and businesses are well protected,
+                    but by going even further – making an impact in ways that go beyond an insurance policy.</p>
+            </div>
+        </div>
+
+            
+            <div class= "card">
+                <span class=" img-box"><img class="img" src="images/kid-in-hat.jpg" /></span>
+                <div class="card-content">
+                    <h3>Our Human Achievement Programs</h3>
+                    <p>These programs drive education, support and volunteerism that put human beings first because when our
+                    customers,
+                    communities and employees succeed, we all do.</p>
+                <a href="">Learn About Our Human Achievement Programs</a>
+                </div>
+            </div>
+        
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>Sustainability</h3>
+                    <p>Making an impact for good is a guiding principle for our
+                    company and is key to how we operate every day.</p>
+                    <a href="">See How We’re Making an Impact for Good</a>
+                </div>
+            <span class=" img-box"><img class="img" src="images/kid-in-hat.jpg" /></span>
+            </div>
+
+            <div class="card">
+                <span class="img-box"><img class="img" src="images/kid-in-hat.jpg" /></span>
+                <div class="card-content">
+                    <h3>Leadership</h3>
+                    <p>Growing the business. Cultivating a culture of doing the right thing.
+                        Our leadership team has a clear vision for our future.</p>
+                    <a href="">Meat Out Leaders</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>Careers</h3>
+                    <p>Our team puts their talents to meaningful work
+                        – helping people achieve amazing things. And we want you to join us.</p>
+                    <a href="">Join Out Team</a>
+                </div>
+                <span class="img-box"><img class="img" src="images/kid-in-hat.jpg" /></span>
+            </div>
+
+        <div>
+            <h1>“Building on our proud history of doing the right thing, you can count on The Hartford to engage on
+                issues when we can make a difference and influence change, and to demonstrate our positive impact on
+                society.”</h1>
             <h3>– Christopher Swift, Chairman & CEO</h3>
         </div>
-        </div>
+    
 
 
-        
-        <footer></footer>    
-        <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-        <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <script crossorigin="anonymous" src="script.js"></script></body>
-    </body>
+
+    <footer></footer>
+    <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script crossorigin="anonymous" src="script.js"></script>
+</body>
+
 </html>
 
 
 
 
 
-        <!-- <div>
+<!-- <div>
                     <form>
                         <fieldset>
                             <legend><h4>Get Quote</h4></legend>
@@ -211,7 +212,7 @@
                         
                     </form>
                 </div> -->
-        <!-- <div class="container">
+<!-- <div class="container">
                         <img class="img-fluid" src="images/kid-in-hat.jpg"/>
                             <div class="tagline">
                                     <h6 >We Believe That A Good Insurance Company Is Not a Myth</h6>

@@ -237,6 +237,7 @@ p{
 .img-box{
     background-color:white;
     position: relative;
+    top:50px;
 
 }
 .img-box:before{
@@ -277,8 +278,6 @@ p{
     display: block;
     height: auto;
     z-index: 2;
-    top: 25px;
-    left: 15px;
 }
 
 .header h3{
@@ -419,9 +418,24 @@ input{
     border-left:none;
 }
 
-.card-container{
+
+.card{
+    
     display:flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
+.card span{
+    width: 40%;
+    margin: 25px;
+
+}
+.card .card-content{
+    position: relative;
+    top: 100px;
+    margin-bottom: 150px;
+    width: 40%
+
+}
 }
